@@ -1,0 +1,91 @@
+head, body{
+	width:100%;
+	height:100%;
+}
+#Menucont{
+	margin:auto;
+	}#Contcont{
+		margin:auto;
+	}
+#symbol{
+	width:14.75%;
+	height:5%;
+	float:left;
+	border: 0.25vw solid;;
+	border-radius: 0px;
+	border-top:none;
+	border-color:#DFF1ff;
+	padding:1px;
+	border-left:none;
+	background-color:#7ec5fb;
+}#motto{
+	border: 0.25vw solid;;
+	border-radius: 0px;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-color:#DFF1ff;
+	width:38%;
+	height:5%;
+	float:left;
+	padding:1px;
+	background-color:#7ec5fb;
+}#blog{
+	width:14.75%;
+	height:5%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-top:none;
+	border-color:#DFF1ff;
+	border-right:none;
+	padding:1px;
+	background-color:#7ec5fb;
+}#code{
+	width:14.75%;
+	height:5%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-top:none;
+	border-color:#DFF1ff;
+	border-right:none;
+	padding:1px;
+	background-color:#7ec5fb;
+}#home{
+	width:14.75%;
+	height:5%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-top:none;
+	border-color:#DFF1ff;
+	padding:1px;
+	background-color:#7ec5fb;
+	border-right:none;
+}#intro{
+	width:60%;
+	height:30%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-color:rgb(147,206,255);
+	margin-top:1%;
+}#twitter{
+	width:36%;
+	height:30%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-color:rgb(147,206,255);
+	margin-top:1%;
+	margin-left:2.5%;
+
+}h1{
+	font-size:120%;
+	font-family:rwt;
+	padding:4px;
+}@font-face {
+font-family: "rwt";
+src: url(../Fonts/rwt.ttf) format("truetype");
+} 
