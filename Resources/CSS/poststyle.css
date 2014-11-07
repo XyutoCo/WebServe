@@ -1,0 +1,54 @@
+h1{
+font-family:'Lucida Sans Unicode';
+text-align:center;
+color:CornFLowerBlue;
+ display: inline;
+ font-weight:normal;
+ }h2{
+ font-family:'Lucida Sans Unicode';
+text-align:center;
+color:Black;
+display: inline;
+font-size:18pt;
+ font-weight:normal;
+  
+ }body, html{
+height:100%;
+font-family:'Lucida Sans Unicode';
+  
+  }a:link {color:CornFlowerBlue;
+letter-spacing:12px;
+size:8;
+font-family:'Lucida Sans Unicode';
+
+}a:visited {
+color: Black;
+letter-spacing:12px;
+size:8;
+font-family:'Lucida Sans Unicode';
+
+}	a{
+text-decoration:none;
+
+} a:hover{
+color:Blue;
+}
+#Main{
+ background: url(http://kitjwalker.github.io/art/bacground.jpg) ;
+    background-size: 100%;
+    background-repeat:repeat-y;
+}#01{
+ background-color:red;
+ width:100%;
+ height:10%;
+}h3{
+ color:Black;
+font-size:12pt;
+ font-weight:normal;}
+h6 { 
+    font-family: "My Custom Font", Verdana, Tahoma;
+	font-size:24pt;
+	text-decoration:none;
+}@font-face {
+    font-family: "My Custom Font";
+    src: url(rwt.ttf) format("truetype");}

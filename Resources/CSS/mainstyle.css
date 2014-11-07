@@ -1,0 +1,65 @@
+head, body{
+	width:99%;
+	height:100%;
+}#header{
+	margin-left:-3%;
+	margin-right:-3%;
+	margin-top:-1.5%;
+	height:40%;
+	width:105%;
+	background-image:url(../Resources/Pictures/header.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: cover;
+}#intro{
+	width:62%;
+	height:30%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-color:rgb(147,206,255);
+	margin-top:1%;
+	background-color:#DFF1FF;
+	margin-bottom:1vw;
+}#twitter{
+	width:34%;
+	height:29%;
+	float:left;
+	border: 0.25vw solid;
+	border-radius: 0px;
+	border-color:rgb(147,206,255);
+	margin-top:1%;
+	margin-left:2.5%;
+	margin-bottom:1%;
+
+}table#menu{
+	width:98.25%;
+	height:5%;
+	background-color:#7ec5fb;
+}table#menu td{
+	border: solid 0.25vw;
+	border-color:#DFF1ff;
+	height:5%;
+	border-top:none;
+}h1{
+	font-size:100%;
+	font-family:rwt;
+	padding-left:1vw;
+}h2{
+	font-size:80%;
+	font-family:rwt;
+}h3{
+	font-size:80%;
+	font-family:verdana;
+	font-weight:lighter;
+	padding:2.5vw;
+}@font-face{
+	font-family: "rwt";
+	src: url(../Fonts/rwt.ttf) format("truetype");
+}a{
+	text-decoration:none;
+	color:black;
+	font-family:rwt;
+}#twitter-widget-0 { 
+      height: 52% !important; 
+    }
