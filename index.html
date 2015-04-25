@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<!-- Start of Meta tags-->
-		<meta name="description" content="Portfolio">
+		<meta name="description" content="Kit Walker.co.uk">
 		<meta name="keywords" content="HTML,CSS,jQuery,JavaScript">
 		<meta name="author" content="Kit Walker">
+		<title>Kit Walker.co.uk</title>
 		<!--End of Meta tags-->
 		<!--Linking JQuery-->
 		<script src="jq.js"></script>
@@ -17,6 +18,7 @@
 		<link rel="icon" href="icon.ico" type="image/ico">
 		<link rel="stylesheet" href="onepage-scroll.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		
+		<script src="https://github.com/carrot/share-button/releases/download/v0.5.0/share.min.js"></script>
 		<!--<script src="jquery.mCustomScrollbar.concat.min.js"></script>
 		<link rel="stylesheet" href="jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title" charset="utf-8">-->
 		
@@ -226,44 +228,75 @@ src: url(londrina.otf) format("truetype");}
 	float:right;
 	margin-top:1%;
 	}#programming{
-		height:30%;
+		height:50%;
 		width:33%;
 		float:right;
 		}#design{
-		height:30%;
+		height:50%;
 		width:33%;
 		float:right;
 		}#innovation{
-		height:30%;
+		height:50%;
 		width:33%;
 		float:right;
 		}#cell-title{
 			width:100%;
-			height:15%;
+			height:10%;
 			padding:1%;
 			
+			}.cell-image{
+				height:55%;
+				width:100%;
 			}.cell-description{
 				width:100%;
-				height:60%;
+				height:40%;
 			}#main-container{
 				}#main-description{
-					height:70%;
+					height:10%;
 					width:92%;
 					float:right;
 					margin-right:6%;
 					padding:1%;
 					font-family:Raleway;
+
+				}#long-motto-container{
+					height:10%;
+					width:92%;
+					float:right;
+					margin-right:6%;
+					padding:1%;
+					font-family:Raleway;
+
+					margin-top:2%;
+				}.long-motto{
+					vertical-align: middle;
+					text-align:center;
 				}.uLine{
 border-bottom: 1px solid white;
 				 }.uLine:hover{
-				 border-bottom: 1px solid #FF7519;
+				 border-bottom: 2px solid #FF7519;
 				  }.fotorama{
 						
 						float:right !important;
 						width:100% !important;
 						height:100% !important;
 						margin-right:-22%;
-					}
+						}.design-image{
+							background-image:url(design.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}.innovation-image{
+							background-image:url(innovation.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}.programming-image{
+							background-image:url(programming.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}
 		</style>
 	</head>
 <body>
@@ -285,6 +318,8 @@ border-bottom: 1px solid white;
 						<div class="cell-description main-body">
 							As a company we are always trying to create new things that look good and work well.
 						</div>
+						<div class="cell-image design-image">
+						</div>
 					</div>
 					<div id="Innovation">
 						<div id="cell-title" class="column-title">
@@ -292,6 +327,8 @@ border-bottom: 1px solid white;
 						</div>
 						<div class="cell-description main-body">
 							We try to take old products and modify them to create something that is ultimatley more useful and environmentally friendly.
+						</div>
+						<div class="cell-image innovation-image">
 						</div>
 					</div>
 					<div id="programming">
@@ -301,11 +338,18 @@ border-bottom: 1px solid white;
 						<div class="cell-description main-body">
 							<span>As a company we are always trying to solve problems using computers and programming.</span>
 						</div>
+						<div class="cell-image programming-image">
+						</div>
 					</div>
 					
 					<div id="main-description">
 					<p>In every day life there are things that need improving with everything I'm sure you could come up with an improvement in 30 seconds and this is what, as a company, we are about. We try with everything we do try and make it more efficient, productive and innovative</p>
+
 					</div>
+					<div id="long-motto-container">
+					<p class="long-motto">We program, innovate and program - for the future</p>
+					</div>
+					
 				</div>
 
   	  </section>
@@ -326,9 +370,9 @@ border-bottom: 1px solid white;
 	</div>
 	<div class="back">
 	  	<br>
-		<a href="css_syntax.asp">Home</a><br>	  	
-		<a href="nav-link">Blog</a><br>
-		<a href="nav-link">Contact</a><br>
+		<a class="menu-title" href="css_syntax.asp">Home</a><br>	  	
+		<a class="menu-title" href="nav-link">Blog</a><br>
+		<a class="menu-title" href="nav-link">Contact</a><br>
 	</div>
 </body>
 	
@@ -336,7 +380,9 @@ border-bottom: 1px solid white;
 					
 
 	<script>
-	  	  $(document).ready(function(){
+		  
+
+		  $(document).ready(function(){
 	        $(".main").onepage_scroll({
 	          sectionContainer: "section",
 	          loop: true,
@@ -344,10 +390,11 @@ border-bottom: 1px solid white;
 	        });
 	  		});
 		  
-		    jQuery("#main-description").fitText(0.8, { minFontSize: '4px', maxFontSize: '25px' });
+		    jQuery("#main-description").fitText(2, { minFontSize: '2px', maxFontSize: '30px' });
 			jQuery(".cell-description").fitText(0.8, { minFontSize: '4px', maxFontSize: '25px' });
 			jQuery(".column-title").fitText(0.8, { minFontSize: '8px', maxFontSize: '35px' });
 			jQuery(".back").fitText(1, { minFontSize: '25px', maxFontSize: '120px' });
 			jQuery("#title").fitText(1, { minFontSize: '25px', maxFontSize: '120px' });
+			jQuery("#long-motto-container").fitText(1.4, { minFontSize: '10px', maxFontSize: '75px' });
 	</script>	
 </html>
