@@ -1,0 +1,398 @@
+
+<html>
+	<head>
+		<!-- Start of Meta tags-->
+		<meta name="description" content="Kit Walker.co.uk">
+		<meta name="keywords" content="HTML,CSS,jQuery,JavaScript">
+		<meta name="author" content="Kit Walker">
+		<title>Kit Walker.co.uk</title>
+		<!--End of Meta tags-->
+		<!--Linking JQuery-->
+		<script src="jq.js"></script>
+		<!--Linking of Fotorama Source files-->
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+		<!--Linking of One Page Scroll-->
+		<script src="jquery-onepage-scroll.js"></script><script src="jquery.fittext.js"></script>
+
+		<link rel="icon" href="icon.ico" type="image/ico">
+		<link rel="stylesheet" href="onepage-scroll.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		
+		<script src="https://github.com/carrot/share-button/releases/download/v0.5.0/share.min.js"></script>
+		<!--<script src="jquery.mCustomScrollbar.concat.min.js"></script>
+		<link rel="stylesheet" href="jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title" charset="utf-8">-->
+		
+		
+		
+		 
+		<style>
+		
+		.onepage-pagination li a:before{
+		  background:rgba(143,207,251,1);
+		}
+
+		.onepage-pagination li a.active:before{
+		  border: 2px solid rgba(143,207,251,1);
+		}
+		a:hover{
+			color:#FF7519 !important;
+		}a{
+			color:inherit;
+		}
+		body,html{
+			height:100%;
+			width:100%;
+			margin:0;
+			position:relative;
+			min-width: 431px;
+			min-height: 402px;
+			
+		}.back {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        text-align: center;
+	        display: block;
+	        width: 25%;
+			height:100%;
+			float:left;
+	        box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        -webkit-box-sizing: border-box;
+	        color: white;
+	        -webkit-transition: all 500ms ease-in-out;
+	        -moz-transition: all 500ms ease-in-out;
+	        -o-transition: all 500ms ease-in-out;
+	        transition: all 500ms ease-in-out;
+			font-family:Raleway;
+			margin-top:10%;
+	    }
+ 
+	    .viewing-page-2 .back{
+	      color: rgba(143,207,251,1) !important;
+	      }
+  	    .viewing-page-3 .back{
+  	      color: rgba(143,207,251,1) !important;
+  	      }
+		#small{
+			height:150%;
+			width:100%;
+			background-color:black;
+		}#menu-one, #menu-two{
+			height: 100%;
+			width: 25%;
+			position: absolute;
+			clip: rect(auto, auto, auto, auto);
+			z-index:2;
+		}#menu-one{
+			float:left;
+			z-index:;
+		}#menu-two{
+			z-index:3;
+		}#container-one{
+			background-image: url("background.JPG");
+			background-size:cover;
+		}#title-container{
+			width:75%;
+			height:100%;
+			float:right;
+			background-color:black;
+		}#title{
+			width:50%;
+			height:10%;
+			float:right;
+			margin-top:10%;
+			margin-right:25%;
+			font-family:Raleway;
+			color:white;
+			padding:0px;
+
+		}#title-column-one{
+			width:25%;
+			height:25%;
+			float:right;
+			padding:1%;
+		}#title-column-two{
+			width:25%;
+			height:25%;
+			float:right;
+			padding:1%;
+		}#title-column-three{
+			width:25%;
+			height:25%;
+			float:right;
+			padding:1%;
+		}#main-intro{
+			width:75%;
+			height:35%;
+			float:right;
+		}#menu{
+			position: fixed;
+			font-size:165%;
+			top: 10%;
+			margin:0 auto;
+			color: white;
+			width:100%;
+			height:100%;
+			font-family:Raleway;
+		}.page1{
+			background-image: url("background.JPG");
+			background-size:cover;
+			
+		}.scroll{
+			height:100%;
+			width:100%;
+			overflow:auto;
+		}.menu ul{
+			list-style-type: none;
+		}.orange-text{
+			color:#FF7519;
+		}.white-text{
+			color:rgba(255,255,255,1);
+		}a{
+			text-decoration:none;
+		}.navi:hover{
+			color:rgb(143,207,251);
+		}.column-title{
+			font-family:Raleway;
+	white-space: nowrap;
+	display: inline-block;
+	text-align:center;
+}
+		.blue-text{
+			color:rgb(143,207,251);
+		}.main-body{
+			font-family:Raleway;
+			vertical-align:top;
+			text-align:center;
+			}.big-body{
+				font-size:100%;
+				font-family:Raleway;
+			vertical-align:top;
+			font-weight:thin;
+			}
+		.navi{
+			text-align:center;
+			
+			}#main-text{
+				width:76%;
+				margin:0%;
+				padding:2%;
+				height:25%;
+				float:right;
+			}
+		/*
+		.mCSB_dragger_bar{
+			background-color:rgba(143,205,255,1) !important;
+			margin:0 auto !important;
+			width:100% !important;
+			border-radius:"3%" !important;
+			opacity:1;
+		}.mCSB_dragger{
+			background-color:rgba(0,0,0,0) !important;
+			width:100% !important;
+			opacity:1;
+		}.mCSB_scrollTools{
+			background-color:;
+			width:1%;
+			opacity:1;
+		}.mCSB_draggerContainer{
+			background-color:  !important;
+			width:100%;
+			opacity:1;
+		}.mCSB_container{
+			margin-right:0%;
+			width:100%;
+			opacity:1;
+		}.mCSB_draggerRail{
+			width:40px;
+			background-color:rgba(0,0,0,0) !important;
+			opacity:1;
+			}.mCSB_button{
+				height:0%;
+				width:0%;
+				
+				}
+		*/
+		.sections{
+						position:absolute;
+	}
+	@font-face {
+font-family: "LinoUnivers";
+src: url(LinoTypeUnivers.ttf) format("truetype");}
+
+	@font-face {
+font-family: "Raleway";
+src: url(Raleway.ttf) format("truetype");}
+ 
+#main-container{
+	width:76%;
+	height:100%;
+	float:right;
+	margin-top:1%;
+	}#programming{
+		height:45%;
+		width:33%;
+		float:right;
+		display:block;
+		}#design{
+		height:45%;
+		width:33%;
+		float:right;
+		display:block;
+		}#innovation{
+		height:45%;
+		width:33%;
+		float:right;
+		display:block;
+		}#cell-title{
+			width:100%;
+			height:10%;
+			padding:1%;
+			
+			}.cell-image{
+				height:55%;
+				width:100%;
+				display:block;
+			}.cell-description{
+				width:100%;
+				height:45%;
+			}#main-container{
+				}#main-description{
+					height:10%;
+					width:92%;
+					float:right;
+					margin-right:6%;
+					padding:1%;
+					font-family:Raleway;
+					display:block;
+				}.long-motto{
+					vertical-align: middle;
+					text-align:center;
+					display:block;
+				}.uLine{
+border-bottom: 1px solid white;
+				 }.uLine:hover{
+				 border-bottom: 2px solid #FF7519;
+				  }.fotorama{
+						
+						float:right !important;
+						width:100% !important;
+						height:100% !important;
+						margin-right:-22%;
+						}.design-image{
+							background-image:url(design.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}.innovation-image{
+							background-image:url(innovation.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}.programming-image{
+							background-image:url(programming.png);
+							background-size:contain;
+							background-repeat:no-repeat;
+							background-position:center;
+						}
+						@media (max-width: 700px){
+							.main-body{
+								font-size:125%;
+							}
+						}
+		</style>
+	</head>
+<body>
+	<div class="main onepage-wrapper" style="position: relative;">
+        <section class="page1 section active" data-index="1" style=" left: 0px; top: 0%;">
+			<div id="title">
+			<p class="title">Xyuto</p>
+			<p>Making life easier using <a class="uLine" href="">programming</a>, <a class="uLine" href=""> innovation</a> and <a class="uLine" href="">design</a></p>
+			</div>
+			
+        </section>
+  	  	<section class="page2 section" data-index="1" style=" left: 0px; top: 100%;">
+  	 				
+				<div id="main-container" >
+					<div id="Design">
+						<div id="cell-title" class="column-title">
+							<a href="">Design</a>
+						</div>
+						<div class="cell-description main-body">
+							As a company we are always trying to create new things that look good and work well.
+						</div>
+						<div class="cell-image design-image">
+						</div>
+					</div>
+					<div id="Innovation">
+						<div id="cell-title" class="column-title">
+							<a href="">Innovation</a>
+						</div>
+						<div class="cell-description main-body">
+							We try to take old products and modify them to create something that is ultimatley more useful and environmentally friendly.
+						</div>
+						<div class="cell-image innovation-image">
+						</div>
+					</div>
+					<div id="programming">
+						<div id="cell-title" class="column-title">
+							<a href="">Programmning</a>
+						</div>
+						<div class="cell-description main-body">
+							<span>As a company we are always trying to solve problems using computers and programming.</span>
+						</div>
+						<div class="cell-image programming-image">
+						</div>
+					</div>
+					
+					<div id="main-description">
+					<p>In every day life there are things that need improving with everything I'm sure you could come up with an improvement in 30 seconds and this is what, as a company, we are about. We try with everything we do try and make it more efficient, productive and innovative</p>
+
+					<p class="long-motto">We program, innovate and program - for the future</p>
+					</div>
+					
+				</div>
+
+  	  </section>
+	 	<section>
+  			<div class="fotorama" data-allowfullscreen="native" data-width="75%" data-height="100%" data-shuffle="true" data-keyboard="true" data-nav="thumbs" data-loop="true" data-arrows="true" data-navposition="top" data-autoplay="true" data-click="true" data-swipe="true" data-trackpad="true"  data-width="100%" data-height="100%" data-shuffle="true" data-fit="contain">
+    	 					<img src="Pic1.JPG" data-caption="Mountain Goat - France">
+    	 					<img src="Pic2.JPG" data-caption="Daisys - France">
+    	 					<img src="Pic3.JPG" data-caption="Glacier - France">
+    	 					<img src="Pic4.JPG" data-caption="Flowers - France">
+    	 					<img src="Pic5.JPG" data-caption="Flower - France">
+    	 					<img src="Pic6.JPG" data-caption="Beach Hut - UK">
+    	 					<img src="Pic7.JPG" data-caption="Sand - UK">
+    	 					<img src="Pic8.JPG" data-caption="Bench - Switzerland">
+    	 					<img src="Pic9.JPG" data-caption="Inverted Sky - UK">
+					
+						</div>
+		</section>
+	</div>
+	<div class="back">
+	  	<br>
+		<a class="menu-title" href="css_syntax.asp">Home</a><br>	  	
+		<a class="menu-title" href="nav-link">Blog</a><br>
+		<a class="menu-title" href="nav-link">Contact</a><br>
+	</div>
+</body>
+	
+	
+					
+
+	<script>
+		  
+
+		  $(document).ready(function(){
+	        $(".main").onepage_scroll({
+	          sectionContainer: "section",
+	          loop: true,
+	          responsiveFallback: false
+	        });
+	  		});
+		  
+
+
+	</script>	
+</html>
