@@ -1,4 +1,7 @@
 	@font-face {
+font-family: "Lato";
+src: url(Lato-Light.ttf) format("truetype");}
+	@font-face {
 font-family: "Raleway";
 src: url(Raleway.ttf) format("truetype");}
  
@@ -12,26 +15,29 @@ body {
 	width:80%;
 	margin-right:10%;
 	background-color:white;
-	font-family:Raleway;
+	font-family:Lato;
 	padding:10px;
 }
+h1,h2,h3,h4,h5{
+	font-family:Lato;
+}
 h1{
-	font-family:Raleway;
+
 	font-size:300%;
 	font-weight:bold;
 	display:inline;
 }h3{
-	font-family:Raleway;
+
 	font-size:115%;
 	font-weight:bold;
 
 }h2{
-	font-family:Raleway;
+
 	font-size:135%;
 	font-weight:bold;
 
 }h4{
-font-family:Raleway;
+
 	font-size:105%;
 	font-weight:bold;
 	}

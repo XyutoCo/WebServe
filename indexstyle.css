@@ -200,8 +200,8 @@
 						position:absolute;
 	}
 	@font-face {
-font-family: "LinoUnivers";
-src: url(LinoTypeUnivers.ttf) format("truetype");}
+font-family: "Lato";
+src: url(Lato-Light.ttf) format("truetype");}
 
 	@font-face {
 font-family: "Raleway";
