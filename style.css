@@ -8,6 +8,7 @@ src: url(Raleway.ttf) format("truetype");}
 body {
 
 	margin: 0 auto;
+	background-color:white;
 
 
 }#page-content{
