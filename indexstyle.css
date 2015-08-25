@@ -2,7 +2,7 @@
 		.onepage-pagination li a:before{
 		  background:rgba(143,207,251,0.5) !important;
 		}.Logo{
-	content:url(White-Logo-Xyuto.png);
+	content:url(Pictures/Logos/White-Logo-Xyuto.png);
 	height:12.5%;
 }
 
@@ -49,10 +49,10 @@
 	      }
   	    
   	      
-  	      .viewing-page-3 .Logo{
-  	      content:url(Blue-Logo-Xyuto.png);
+  	      .viewing-page-1 .Logo{
+  	      content:url(Pictures/Logos/White-Logo-Xyuto.png);
   	      }.viewing-page-2 .Logo{
-  	      content:url(Blue-Logo-Xyuto.png);
+  	      content:url(Pictures/Logos/Blue-Logo-Xyuto.png);
   	      }
 		#small{
 			height:150%;
@@ -272,17 +272,17 @@ border-bottom: 1px solid white;
 						height:100% !important;
 						margin-right:-22%;
 						}.design-image{
-							background-image:url(Pictures/MotoImages/design.png);
+							background-image:url(Pictures/MottoImages/design.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
 						}.innovation-image{
-							background-image:url(Pictures/MotoImages/innovation.png);
+							background-image:url(Pictures/MottoImages/innovation.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
 						}.programming-image{
-							background-image:url(Pictures/MotoImages/programming.png);
+							background-image:url(Pictures/MottoImages/programming.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
