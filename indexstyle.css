@@ -47,9 +47,7 @@
 	    .viewing-page-2 .back{
 	      color: rgba(143,207,251,1) !important;
 	      }
-  	    .viewing-page-3 .back{
-  	      color: rgba(143,207,251,1) !important;
-  	      }
+  	    
   	      
   	      .viewing-page-3 .Logo{
   	      content:url(Blue-Logo-Xyuto.png);
@@ -274,17 +272,17 @@ border-bottom: 1px solid white;
 						height:100% !important;
 						margin-right:-22%;
 						}.design-image{
-							background-image:url(design.png);
+							background-image:url(Pictures/MotoImages/design.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
 						}.innovation-image{
-							background-image:url(innovation.png);
+							background-image:url(Pictures/MotoImages/innovation.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
 						}.programming-image{
-							background-image:url(programming.png);
+							background-image:url(Pictures/MotoImages/programming.png);
 							background-size:contain;
 							background-repeat:no-repeat;
 							background-position:center;
