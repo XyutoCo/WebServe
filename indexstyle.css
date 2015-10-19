@@ -1,6 +1,6 @@
 		
 		.onepage-pagination li a:before{
-		  background:rgba(143,207,251,0.5) !important;
+		  background:rgba(153,204,255,0.5) !important;
 		}.Logo{
 	content:url(Pictures/Logos/White-Logo-Xyuto.png);
 	height:12.5%;
@@ -16,6 +16,9 @@
 		}.white{
 		color:rgb(143,207,251) !important;
 		font-size:155%;}
+		.white:hover{
+		color:rgb(143,207,251) !important;
+		}
 		body,html{
 			height:100%;
 			width:100%;
