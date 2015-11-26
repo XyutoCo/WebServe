@@ -19,7 +19,8 @@
 					preload: 1,
 				});
 			});
-		</script>
+			
+					</script>
 		<style type="text/css">
 			body,html{
 				margin:0 auto;
@@ -86,7 +87,7 @@ font-family:Raleway;
 	</div>
 		<div id="freewall" class="free-wall">
 			
-			<div class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/01.html'"> 
+			<div id="01" class="brick size22" data-fixSize=1 > 
 				<img src="http://inwallspeakers1.com/wp-content/uploads/2014/07/white-computer-icon.png" class="Blog-image" >
 				<div class='cover'>
 					<h2>Asus Rampage</h2>
@@ -95,7 +96,7 @@ font-family:Raleway;
 					</p>
 				</div>
 			</div>
-			<div class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/02.html'"> 
+			<div id="02" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/02.html'"> 
 				<img src="http://flaticons.net/icons/Network%20and%20Security/CPU-01.png" class="Blog-image">
 				<div class='cover'>
 					<h2>Overclocking</h2>
@@ -104,8 +105,8 @@ font-family:Raleway;
 					</p>
 				</div>
 			</div>
-			<div class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/03.html'"> 
-				<img src="http://flaticons.net/icons/Network%20and%20Security/CPU-01.png" class="Blog-image">
+			<div id="03" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/03.html'"> 
+				<img src="http://www.iconsdb.com/icons/download/white/rocket-512.png" class="Blog-image">
 				<div class='cover'>
 					<h2>An astronauts method</h2>
 					<p>
@@ -113,7 +114,35 @@ font-family:Raleway;
 					</p>
 				</div>
 			</div>
+			<div id="04" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/04.html'"> 
+				<img src="http://www.iconsdb.com/icons/preview/white/us-dollar-xxl.png" class="Blog-image">
+				<div class='cover'>
+					<h2>How to black Friday by storm.</h2>
+					<p>
+						A guide to dummies and veterans regarding how to black Friday by storm.
+					</p>
+				</div>
+			</div>
 			
 		</div>
 	</body>
+	<script>
+	
+	$("#01").click(function(){
+		var url = "Posts/01.html"
+		window.location = url;
+	});
+	$("#02").click(function(){
+		var url = "Posts/02.html"
+		window.location = url;
+	});
+	$("#03").click(function(){
+		var url = "Posts/03.html"
+		window.location = url;
+	});
+	$("#04").click(function(){
+		var url = "Posts/04.html"
+		window.location = url;
+	});
+	</script>
 </html>
