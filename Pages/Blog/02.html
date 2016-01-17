@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+ 
+		<link rel="stylesheet" type="text/css" href="../../Files/jQuery/FreeWall/style.css" />
+		<link href="../../Files/Stylesheets/blogStyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../../Files/jQuery/jquery.min.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/freewall.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/index.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+				app.setup({
+					share: 1,
+					color: 0,
+					layout: 1,
+					events: 1,
+					methods: 1,
+					options: 1,
+					preload: 1,
+				});
+			});
+			
+					</script>
+		<style type="text/css">
+			body,html{
+				margin:0 auto;
+				height:100%;
+				width:100%
+				background-color:white !important;
+			}#content {
+				width:calc(100% - 66px);
+				position:relative !imoprtant;
+				margin-top:66px;
+				color:black;
+			}h1{
+				color:rgb(101,171,245);
+			}h3{
+				font-size:70%;
+			}h4{
+				font-size:60%;
+			}.cover{
+					height:50%;
+		}.Blog-image{
+	height:25% !important;
+	width:25% !important;
+	margin-left:37.5%;
+	margin-top:15.5%;
+	
+}.cover{
+color:white;
+font-family:Futura;
+font-size:75%;
+
+}.Logo{
+	
+	height:12.5%;
+}
+
+		</style>
+	</head>
+	<body>
+	<div id="cont">
+	<div id="menu">
+			<p>XYUTO</p>
+			<div id="menu-theRightSide">
+					<a id="homeButton" href="../../index.html#intro">
+						HOME
+					</a>
+					<a id="aboutButton" href="../../index.html#second">
+						ABOUT US
+					</a>
+					<a id="blogButton" href="index.html">
+						BLOG
+					</a>
+					<a id="serviceButton" href="../../index.html#third">
+						SERVICES FOR YOU
+					</a>
+					
+				<div id="openButton"> </div>
+				</div>
+			
+	<div id="content">
+<h1>Pros and Cons of Overclocking a CPU</h1>
+			<h3>Author: Callum Potter | Date: 16 June 2015</h3>
+			<div id="page-content">
+			<h4>Sometimes with computers the CPU can become old. 
+			Stop working fast or just not be able to perform tasks you need to.
+			 Well say hello to the new trend CPU overclocking. With just a few 
+			 simple steps you can turn a lousy 2.55GHz processor into 3!!! 
+			 (Terms and conditions apply)<h4>
+			<h4>
+How many times have you seen something that sound like this? 
+A few maybe none? Well that's because of the extremely large risks 
+it can pose to computers which can sometimes lead to processors literally 
+melting and yes they can I've seen it before and it was dark. So in the light 
+I hope to persuade you to see the great benefits overclocking can have.
+</h4>
+<h4>
+First to outline the risks:
+<ul>
+	<li>Inadequate temperature control or power supply may result in a decrease in performance or possibly even failure.</li>
+	<li>A slight decrease in lifespan (not you of course. Well maybe...)</li>
+	<li>Don't expect an amazing increase.</li>
+</ul>
+</h4>
+<h4>
+Now firstly you will need some sort of programme or way of overclocking it. 
+Beforehand check the temperature and power usage of the CPU. If it is getting too
+ hot you may need to install more fans or if you want to a water cooling system. 
+ These will ensure the processor continues and performs as best as possible. A large
+  voltage may also fry it so check it is well within the regions. Slowly increase the 
+  clock speed over a few remembering to stay within what you have got. Once you've gone
+   far you're too late so don't go to fast. After a while you should have a well overclocked
+    processor which is nicely fitted and should run smoothly.
+</h4>
+<h4>
+If you do accidently take it too far most Intel processors have a warranty which allows you
+ to get it fixed or possibly a new one.
+</h4>
+<h4>
+So what are you waiting for? Go and overclock it now.
+</h4>
+
+	</div>
+	</div>
+		<div id="menu-popup">
+			<div id="closeButton"></div>
+			<div style="height:calc(50% - 150px);"> </div>
+
+			<div id="popup-menu">
+				<p id="popupTitle">Xyuto</p><br>
+				<p id="popupText"><a href="../../index.html#intro">Home</a></p><br>
+				<p id="popupText"><a href="">Blog</a></p><br>
+				<p id="popupText"><a href="../../index.html#second">About Us</a></p><br>
+				<p id="popupText"><a href="../../index.html#third">Services For You</a></p>
+			</div>
+		</div>
+	</body>
+	<script>
+	
+	$("#01").click(function(){
+		var url = "Posts/01.html"
+		window.location = url;
+	});
+	$("#02").click(function(){
+		var url = "Posts/02.html"
+		window.location = url;
+	});
+	$("#03").click(function(){
+		var url = "Posts/03.html"
+		window.location = url;
+	});
+	$("#04").click(function(){
+		var url = "Posts/04.html"
+		window.location = url;
+	});
+	</script>
+	<script>
+	$('#menu-popup').hide();
+	$('#openButton').click(function(){
+		$('#menu-popup').show();
+		$(document).toggleClass('intro-blur');
+	})
+	$('#closeButton').click(function(){
+		$('#closeButton').css("z-index","-1");
+		$('#menu-popup').hide();
+		$(document).toggleClass('intro-blur');
+
+	})
+</script>
+</html>

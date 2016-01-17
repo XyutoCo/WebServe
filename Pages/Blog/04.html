@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+ 
+		<link rel="stylesheet" type="text/css" href="../../Files/jQuery/FreeWall/style.css" />
+		<link href="../../Files/Stylesheets/blogStyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../../Files/jQuery/jquery.min.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/freewall.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/index.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+				app.setup({
+					share: 1,
+					color: 0,
+					layout: 1,
+					events: 1,
+					methods: 1,
+					options: 1,
+					preload: 1,
+				});
+			});
+			
+					</script>
+		<style type="text/css">
+			body,html{
+				margin:0 auto;
+				height:100%;
+				width:100%
+				background-color:white !important;
+			}#content {
+				width:calc(100% - 66px);
+				position:relative !imoprtant;
+				margin-top:66px;
+				color:black;
+			}h1{
+				color:rgb(101,171,245);
+			}h3{
+				font-size:70%;
+			}h4{
+				font-size:60%;
+			}.cover{
+					height:50%;
+		}.Blog-image{
+	height:25% !important;
+	width:25% !important;
+	margin-left:37.5%;
+	margin-top:15.5%;
+	
+}.cover{
+color:white;
+font-family:Futura;
+font-size:75%;
+
+}.Logo{
+	
+	height:12.5%;
+}
+
+		</style>
+	</head>
+	<body>
+	<div id="cont">
+	<div id="menu">
+			<p>XYUTO</p>
+			<div id="menu-theRightSide">
+					<a id="homeButton" href="../../index.html#intro">
+						HOME
+					</a>
+					<a id="aboutButton" href="../../index.html#second">
+						ABOUT US
+					</a>
+					<a id="blogButton" href="index.html">
+						BLOG
+					</a>
+					<a id="serviceButton" href="../../index.html#third">
+						SERVICES FOR YOU
+					</a>
+					
+				<div id="openButton"> </div>
+				</div>
+			
+	<div id="content">
+		<h1>How to take black Friday by storm.</h1>
+			<h3>Author: Kit Walker | Date: 25 November 2015</h3>
+			<div id="page-content">
+			<h4>Black Friday is huge. No, Gargantuan. But just shopping 'willy nilly', is bad practice. If you plan, you can save a lot of money, its all about technique, mess this up, and your wasting time and money. So here is a list (of the best tips) to make sure that on
+			black Friday you don't enter bankruptcy.
+			<br><br>
+			<ul>
+				<li>Know what you are looking for an be specific, it's no good browsing online and going for any deal that looks good. The problem with doing this is that you end up with junk you never really needed.</li>
+				<li>Once you have made a decision to your focus area make sure to look around for better deals, use apps like HUKD and the like to make sure there aren't better deals about.</li>
+				<li>Keep focussed and join the line, if something looks like a great deal, put it in your basket and check for fifteen minutes. On Amazon while it's in your basket you have claimed it, for fifteen minutes only though. So be quick.</li>
+				<li>Get in early, don't waste time because the good deals are gone. Quick.</li>
+				<li>Sign up to deal alerts, all though they seem like a pest they can help you to get the best deals and if you keep on top of things you can get them before they sell out.</li>
+			</ul>
+			<Br><br>These are just a feq tips to ensure you don't completely scam yourself this Black </strike><s>Friday</s></strike> November. 
+			
+			</h4>
+	</div>
+	</div>
+		<div id="menu-popup">
+			<div id="closeButton"></div>
+			<div style="height:calc(50% - 150px);"> </div>
+
+			<div id="popup-menu">
+				<p id="popupTitle">Xyuto</p><br>
+				<p id="popupText"><a href="../../index.html#intro">Home</a></p><br>
+				<p id="popupText"><a href="">Blog</a></p><br>
+				<p id="popupText"><a href="../../index.html#second">About Us</a></p><br>
+				<p id="popupText"><a href="../../index.html#third">Services For You</a></p>
+			</div>
+		</div>
+	</body>
+	<script>
+	
+	$("#01").click(function(){
+		var url = "Posts/01.html"
+		window.location = url;
+	});
+	$("#02").click(function(){
+		var url = "Posts/02.html"
+		window.location = url;
+	});
+	$("#03").click(function(){
+		var url = "Posts/03.html"
+		window.location = url;
+	});
+	$("#04").click(function(){
+		var url = "Posts/04.html"
+		window.location = url;
+	});
+	</script>
+	<script>
+	$('#menu-popup').hide();
+	$('#openButton').click(function(){
+		$('#menu-popup').show();
+		$(document).toggleClass('intro-blur');
+	})
+	$('#closeButton').click(function(){
+		$('#closeButton').css("z-index","-1");
+		$('#menu-popup').hide();
+		$(document).toggleClass('intro-blur');
+
+	})
+</script>
+</html>

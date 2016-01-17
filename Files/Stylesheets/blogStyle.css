@@ -1,0 +1,140 @@
+
+body, html{
+	margin: 0 auto;
+	padding:0px;
+	height:100% !important;
+	width:100% !important;
+	
+}
+
+/* Font Inclusions */
+@font-face {
+	font-family: "Futura";
+	src: url(../Fonts/FuturaExtended.ttf) format("truetype");
+}a{
+	text-decoration:inherit;
+	color:inherit;
+
+}a:hover{
+	color:inherit;
+}a:visited{
+	color:inherit;
+}
+
+
+/* Section One*/
+
+#intro{
+	background: url(../Pictures/Full.jpg) 50% 0 no-repeat fixed;
+	background-size:cover;
+	margin-top:66px;
+	height:100%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+.intro-blur{
+	-webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+#menu{
+	width:100%;
+	height:66px;
+	background-color:rgb(33,33,33);
+ 	color:rgb(101,171,245);
+	padding:22px;
+	font-family: Futura;
+	font-size:22px;
+	float:left;
+	display:inline;
+	box-sizing: border-box; 
+	position:absolute;
+}#menu #homeButton{
+	margin-right:22px;
+	cursor:pointer;
+	margin-top:4px;
+}#menu #aboutButton{
+	margin-right:22px;
+	cursor:pointer;
+	margin-top:4px;
+}#menu #blogButton{
+	cursor:pointer;
+	margin-top:4px;
+	margin-right:22px;
+}#menu #blogButton:hover, #aboutButton:hover, #homeButton:hover, #serviceButton:hover{
+	color:rgb(215,231,245);
+}#menu #serviceButton{
+	cursor:pointer;
+	margin-top:4px;
+	margin-right:22px;
+}#menu p{
+	display:inline;
+	margin-right:0px;
+}#menu-theRightSide{
+	float:right;
+	margin-top:3.5px;
+	font-size:15px;
+	line-height:15px;
+	display:table;
+}#menu-popup{
+	height:100%;
+	width:100%;
+	background-color:rgba(33,33,33,0.3);
+	z-index:5;
+	margin-top:0px;
+	position: absolute;
+	top: 0;
+}#popup-menu{
+	height:300px;
+	width:200px;
+	margin-left:calc( 50% - 100px);
+}#popupTitle{
+	color:white;
+	font-size:6vmax;
+	text-align:center;
+	font-family:Futura;
+	margin-bottom:10px;
+}#popupText{
+	color:rgb(101,171,245);
+	font-size:3vmax;
+	text-align:center;
+	font-family:Futura;
+	line-height:100%;
+	margin:-5px;
+	cursor:pointer;
+}#popupText:hover{
+	color:rgb(215,231,245);
+}#closeButton{
+	height:22px;
+	width:22px;
+	margin-top:22px;
+	margin-right:22px;
+	background: url(../Pictures/menu.png);
+	float:right;
+}#openButton{
+	float:right;
+	height:22px;
+	width:22px;
+	margin-left:22px;
+	margin-top:-3px;
+	display:none;
+	background: url(../Pictures/menu.png);
+	background-image:cover;
+}
+
+
+ @media (max-width: 550px){
+#menu #homeButton{
+	display:none;
+}#menu #aboutButton{
+	display:none;
+}#menu #blogButton{
+	display:none;
+}#menu #serviceButton{
+	display:none;
+}#menu #openButton{
+display:block;
+}}

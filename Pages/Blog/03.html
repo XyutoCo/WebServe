@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+ 
+		<link rel="stylesheet" type="text/css" href="../../Files/jQuery/FreeWall/style.css" />
+		<link href="../../Files/Stylesheets/blogStyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../../Files/jQuery/jquery.min.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/freewall.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/index.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+				app.setup({
+					share: 1,
+					color: 0,
+					layout: 1,
+					events: 1,
+					methods: 1,
+					options: 1,
+					preload: 1,
+				});
+			});
+			
+					</script>
+		<style type="text/css">
+			body,html{
+				margin:0 auto;
+				height:100%;
+				width:100%
+				background-color:white !important;
+			}#content {
+				width:calc(100% - 66px);
+				position:relative !imoprtant;
+				margin-top:66px;
+				color:black;
+			}h1{
+				color:rgb(101,171,245);
+			}h3{
+				font-size:70%;
+			}h4{
+				font-size:60%;
+			}.cover{
+					height:50%;
+		}.Blog-image{
+	height:25% !important;
+	width:25% !important;
+	margin-left:37.5%;
+	margin-top:15.5%;
+	
+}.cover{
+color:white;
+font-family:Futura;
+font-size:75%;
+
+}.Logo{
+	
+	height:12.5%;
+}
+
+		</style>
+	</head>
+	<body>
+	<div id="cont">
+	<div id="menu">
+			<p>XYUTO</p>
+			<div id="menu-theRightSide">
+					<a id="homeButton" href="../../index.html#intro">
+						HOME
+					</a>
+					<a id="aboutButton" href="../../index.html#second">
+						ABOUT US
+					</a>
+					<a id="blogButton" href="index.html">
+						BLOG
+					</a>
+					<a id="serviceButton" href="../../index.html#third">
+						SERVICES FOR YOU
+					</a>
+					
+				<div id="openButton"> </div>
+				</div>
+			
+	<div id="content">
+			<h1>An astronauts method.</h1>
+			<h3>Author: Kit Walker | Date: 17 November 2015</h3>
+			<div id="page-content">
+			<h4>Chris Hudson is a Canadian astronaut, the first of his people to perform a space walk. Recently he did a talk at a local Girls Private School a talk which I was fortunate enough to have attended.
+			He spoke mostly about space walking which was undoubtedly interesting however for me, the real interest was the 45 minutes of questions that he answered. First though for those who don't know, Chris Hadfield is well known for his
+			 youtube videos covering a lot of questions how different things work in space.
+			 
+			<br><br>
+			As previously said, Chris Hadfield did a question and answer session, numerous questions were asked. One that at first I shrugged off, I have since become very interested in his response. The question was "Do you have any career advice for the girls attending this school." 
+			In response Chris gave an extensive response. He first began by emphasising the importance of choosing a career path. He suggested that to think about what careers would interest you think about what five sections you would go to given any choice. 
+			<br><br>
+			He then said once you have made this decision proceed to learn around the subject. He suggested that you pick a part any subject then over the weekend study in depth. Then on the Sunday you can celebrate that you have come closer to your dream.
+			<br><br>
+			Another interesting thing was that he suggested for people make progress is to try to plan and mitigate for things going wrong. So instead of living in hope. Prepare, learn and not live worried. Make a change.
+			<br><br>
+			In conclusion I think it is important not to hang around waiting, make stuff happen
+			
+			</h4>
+	</div>
+	</div>
+		<div id="menu-popup">
+			<div id="closeButton"></div>
+			<div style="height:calc(50% - 150px);"> </div>
+
+			<div id="popup-menu">
+				<p id="popupTitle">Xyuto</p><br>
+				<p id="popupText"><a href="../../index.html#intro">Home</a></p><br>
+				<p id="popupText"><a href="">Blog</a></p><br>
+				<p id="popupText"><a href="../../index.html#second">About Us</a></p><br>
+				<p id="popupText"><a href="../../index.html#third">Services For You</a></p>
+			</div>
+		</div>
+	</body>
+	<script>
+	
+	$("#01").click(function(){
+		var url = "Posts/01.html"
+		window.location = url;
+	});
+	$("#02").click(function(){
+		var url = "Posts/02.html"
+		window.location = url;
+	});
+	$("#03").click(function(){
+		var url = "Posts/03.html"
+		window.location = url;
+	});
+	$("#04").click(function(){
+		var url = "Posts/04.html"
+		window.location = url;
+	});
+	</script>
+	<script>
+	$('#menu-popup').hide();
+	$('#openButton').click(function(){
+		$('#menu-popup').show();
+		$(document).toggleClass('intro-blur');
+	})
+	$('#closeButton').click(function(){
+		$('#closeButton').css("z-index","-1");
+		$('#menu-popup').hide();
+		$(document).toggleClass('intro-blur');
+
+	})
+</script>
+</html>
+
+
+			

@@ -1,56 +1,9 @@
-	@font-face {
-font-family: "Lato";
-src: url(Lato-Light.ttf) format("truetype");}
-	@font-face {
-font-family: "Raleway";
-src: url(Raleway.ttf) format("truetype");}
- 
-body {
-
-	margin: 0 auto;
-	background-color:white;
-
-
-}#page-content{
-	margin-top:5%;
-	width:80%;
-	margin-right:10%;
-	background-color:white;
-	font-family:Lato;
-	padding:10px;
-}
-h1,h2,h3,h4,h5{
-	font-family:Lato;
-}
-h1{
-
-	font-size:300%;
-	font-weight:bold;
-	display:inline;
-}h3{
-
-	font-size:115%;
-	font-weight:bold;
-
-}h2{
-
-	font-size:135%;
-	font-weight:bold;
-
-}h4{
-
-	font-size:105%;
-	font-weight:bold;
-	}
 
 .free-wall {
-	margin: auto;
+	magin-top:22px;
 }
 
-.free-wall-logo {
-	margin: auto;
-	height: 420px;
-}
+
 .size2-2 {
 	width: 80px;
 	height: 80px;

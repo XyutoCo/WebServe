@@ -8,7 +8,6 @@
 	var colour = [
 		"#8FCFFB",
 		"#8F99FB",
-		"#fbbb8f",
 		
 	];
 

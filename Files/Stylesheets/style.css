@@ -1,0 +1,243 @@
+
+body, html{
+	margin: 0 auto;
+	padding:0px;
+	height:100% !important;
+	width:100% !important;
+	
+}
+
+/* Font Inclusions */
+@font-face {
+	font-family: "Futura";
+	src: url(../Fonts/FuturaExtended.ttf) format("truetype");
+}a{
+	text-decoration:inherit;
+	color:inherit;
+
+}a:hover{
+	color:inherit;
+}a:visited{
+	color:inherit;
+}
+
+
+/* Section One*/
+#intro{
+	background: url(../Pictures/Full.jpg) 50% 0 no-repeat fixed;
+	background-size:cover;
+	margin-top:66px;
+	height:100%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+.intro-blur{
+	-webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+#menu{
+	width:100%;
+	height:66px;
+	background-color:rgb(33,33,33);
+ 	color:rgb(101,171,245);
+	padding:22px;
+	font-family: Futura;
+	font-size:22px;
+	float:left;
+	display:inline;
+	box-sizing: border-box; 
+	position:absolute;
+}#menu #homeButton{
+	margin-right:22px;
+	cursor:pointer;
+	margin-top:4px;
+}#menu #aboutButton{
+	margin-right:22px;
+	cursor:pointer;
+	margin-top:4px;
+}#menu #blogButton{
+	cursor:pointer;
+	margin-top:4px;
+	margin-right:22px;
+}#menu #blogButton:hover, #aboutButton:hover, #homeButton:hover, #serviceButton:hover{
+	color:rgb(215,231,245);
+}#menu #serviceButton{
+	cursor:pointer;
+	margin-top:4px;
+	margin-right:22px;
+}#menu p{
+	display:inline;
+	margin-right:0px;
+}#menu-theRightSide{
+	float:right;
+	margin-top:3.5px;
+	font-size:15px;
+	line-height:15px;
+	display:table;
+}#menu-popup{
+	height:100%;
+	width:100%;
+	background-color:rgba(33,33,33,0.3);
+	z-index:5;
+	margin-top:0px;
+	position: absolute;
+	top: 0;
+}#popup-menu{
+	height:300px;
+	width:200px;
+	margin-left:calc( 50% - 100px);
+}#popupTitle{
+	color:white;
+	font-size:6vmax;
+	text-align:center;
+	font-family:Futura;
+	margin-bottom:10px;
+}#popupText{
+	color:rgb(101,171,245);
+	font-size:3vmax;
+	text-align:center;
+	font-family:Futura;
+	line-height:100%;
+	margin:-5px;
+	cursor:pointer;
+}#popupText:hover{
+	color:rgb(215,231,245);
+}#closeButton{
+	height:22px;
+	width:22px;
+	margin-top:22px;
+	margin-right:22px;
+	background: url(../Pictures/menu.png);
+	float:right;
+}#openButton{
+	float:right;
+	height:22px;
+	width:22px;
+	margin-left:22px;
+	margin-top:-3px;
+	display:none;
+	background: url(../Pictures/menu.png);
+	background-image:cover;
+}
+
+#pageOneContent{
+	height:100px;
+	width:100%;
+	position:absolute;
+	box-sizing:border-box;
+}#pageOneContent p{
+	text-align:center;
+	font-family:Futura;
+	color:white;
+	font-size:6vmax;
+}
+
+
+#second{
+	background-color:white;
+	color: black;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#pageTwoContent{
+	height:80%;
+	width:80%;
+	margin-left:10%;
+	margin-top:10px;
+	padding-bottom:33px;
+}#pageTwoContentImageDiv{
+	width:100%;
+	height:100%;
+	background:url(../Pictures/carExposure.jpg);
+	background-size:cover ;
+	background-position:center;
+	text-align:center;
+	color:rgb(215,231,245);
+	font-family:Futura;
+	padding:33px 2.5% 33px 2.5%;
+	box-sizing:border-box;
+	font-size:140%;
+	margin-bottom
+}#pageTwoContentImageDiv p.title{
+
+}#pageTwoContentImageDiv p.text{
+	font-size:70%;
+}#aboutPersonal{
+font-size:150%;
+font-family:Futura;
+padding:30px;
+}
+#aboutPersonal p.title{
+	display:inline;
+	font-size:1.4vmax;
+	color:rgb(27,56,84);
+
+}#aboutPersonal p.text{
+font-size:1.17vmax;
+
+}
+
+#third{
+	background: url(../Pictures/Car.jpg) 50% 0 no-repeat fixed;
+	color: white;
+
+}#thirdPageContent{
+	height:80%;
+	width:80%;
+	background-color:white;
+	margin-left:10%;
+	color:rgb(27,56,84);
+	font-family:Futura;
+	font-size:140%;
+	box-sizing:border-box;
+	text-align:left;
+	padding:33px 2.5% 33px 2.5%;
+}#thirdPageContent p.text{
+	font-size:1vmax;
+}#fourth{
+	background-color:rgb(33,33,33);
+ color:rgb(101,171,245);
+ font-family: Futura;
+ text-align:center;
+
+	font-size:150%;
+	padding:22px;
+box-sizing: border-box;
+	
+} #fourth p.title{
+	display:inline;
+	line-height:20px;
+
+}#fourth p.text{
+font-size:75%;
+color:rgb(215,231,245);
+margin-top:5px;
+}.contactText{
+font-size:1.5vmax;
+color:rgb(215,231,245);
+
+}#fourth img.icon{
+margin-right:10px;
+width:25px;
+cursor:pointer;
+}
+
+ @media (max-width: 550px){
+#menu #homeButton{
+	display:none;
+}#menu #aboutButton{
+	display:none;
+}#menu #blogButton{
+	display:none;
+}#menu #serviceButton{
+	display:none;
+}#menu #openButton{
+display:block;
+}}

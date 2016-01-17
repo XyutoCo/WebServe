@@ -3,11 +3,13 @@
 	<head>
 		
  
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="freewall.js"></script>
-		<script type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../Files/jQuery/FreeWall/style.css" />
+		<link href="../../Files/Stylesheets/blogStyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../../Files/jQuery/jquery.min.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/freewall.js"></script>
+		<script type="text/javascript" src="../../Files/jQuery/FreeWall/index.js"></script>
 		<script type="text/javascript">
+			
 			$(function() {
 				app.setup({
 					share: 1,
@@ -28,37 +30,12 @@
 				width:100%
 				background-color:white !important;
 			}.free-wall {
-				margin:15px;
-				margin-right:0px;
-				width:77.5%;
-				float:right;
-				
-				}.cover{
+				width:calc(100% - 66px);
+				position:relative !imoprtant;
+				margin-top:66px;
+			}.cover{
 					height:50%;
-		}a:hover{
-			color:#FF7519 !important;
-		}a{
-			color:inherit;
-			text-decoration:none;
-		}.back{
-			width:20%;
-			height:90%;
-			margin-top:10%;
-			float:left;
-			text-align:center;
-			font-family:Raleway;
-			position:fixed;
-			
-
-		}
-		.menu-title{
-		font-size:3.5vmax;
-		width:100%;
-		line-height:100%;
-		text-decoration:none;
-		color:rgb(143,207,251);
-		text-shadow: 0px;
-}.Blog-image{
+		}.Blog-image{
 	height:25% !important;
 	width:25% !important;
 	margin-left:37.5%;
@@ -66,7 +43,8 @@
 	
 }.cover{
 color:white;
-font-family:Raleway;
+font-family:Futura;
+font-size:75%;
 
 }.Logo{
 	
@@ -76,26 +54,27 @@ font-family:Raleway;
 		</style>
 	</head>
 	<body>
-		<div style="width:100%;height:30%;background-image: url('imagebckg.jpg');background-size:cover;background-position: center;"></div>
-		<div class="back">
-		
-	  	<br>
-	  	<img src="Pictures/Logos/Blue-Logo-Xyuto.png" class="Logo"><br><br>
-		<a class="menu-title" href="index.html">Home</a><br>	  	
-		<a class="menu-title" href="#">Blog</a><br>
-		<a class="menu-title" href="nav-link">Contact</a><br>
-	</div>
-		<div id="freewall" class="free-wall">
-			
-			<div id="01" class="brick size22" data-fixSize=1 > 
-				<img src="http://inwallspeakers1.com/wp-content/uploads/2014/07/white-computer-icon.png" class="Blog-image" >
-				<div class='cover'>
-					<h2>Asus Rampage</h2>
-					<p>
-						 A look at the Asus rampage and what it entails.
-					</p>
-				</div>
+	<div id="cont">
+	<div id="menu">
+			<p>XYUTO</p>
+			<div id="menu-theRightSide">
+					<a id="homeButton" href="../../index.html#intro">
+						HOME
+					</a>
+					<a id="aboutButton" href="../../index.html#second">
+						ABOUT US
+					</a>
+					<a id="blogButton" href="">
+						BLOG
+					</a>
+					<a id="serviceButton" href="../../index.html#third">
+						SERVICES FOR YOU
+					</a>
+				<div id="openButton"> </div>
 			</div>
+	<div id="freewall" class="free-wall">
+			
+			
 			<div id="02" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/02.html'"> 
 				<img src="http://flaticons.net/icons/Network%20and%20Security/CPU-01.png" class="Blog-image">
 				<div class='cover'>
@@ -123,26 +102,47 @@ font-family:Raleway;
 					</p>
 				</div>
 			</div>
-			
+	</div>
+	</div>
+		<div id="menu-popup">
+			<div id="closeButton"></div>
+			<div style="height:calc(50% - 150px);"> </div>
+
+			<div id="popup-menu">
+				<p id="popupTitle">Xyuto</p><br>
+				<p id="popupText"><a href="../../index.html#intro">Home</a></p><br>
+				<p id="popupText"><a href="">Blog</a></p><br>
+				<p id="popupText"><a href="../../index.html#second">About Us</a></p><br>
+				<p id="popupText"><a href="../../index.html#third">Services For You</a></p>
+			</div>
 		</div>
 	</body>
 	<script>
 	
-	$("#01").click(function(){
-		var url = "Posts/01.html"
-		window.location = url;
-	});
 	$("#02").click(function(){
-		var url = "Posts/02.html"
+		var url = "02.html"
 		window.location = url;
 	});
 	$("#03").click(function(){
-		var url = "Posts/03.html"
+		var url = "03.html"
 		window.location = url;
 	});
 	$("#04").click(function(){
-		var url = "Posts/04.html"
+		var url = "04.html"
 		window.location = url;
 	});
 	</script>
+	<script>
+	$('#menu-popup').hide();
+	$('#openButton').click(function(){
+		$('#menu-popup').show();
+		$(document).toggleClass('intro-blur');
+	})
+	$('#closeButton').click(function(){
+		$('#closeButton').css("z-index","-1");
+		$('#menu-popup').hide();
+		$(document).toggleClass('intro-blur');
+
+	})
+</script>
 </html>
