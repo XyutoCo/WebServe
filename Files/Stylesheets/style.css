@@ -164,7 +164,7 @@ body, html{
 	padding:33px 2.5% 33px 2.5%;
 	box-sizing:border-box;
 	font-size:140%;
-	margin-bottom
+	text-align:center !important;
 }#pageTwoContentImageDiv p.title{
 
 }#pageTwoContentImageDiv p.text{
@@ -197,7 +197,7 @@ font-size:1.17vmax;
 	font-family:Futura;
 	font-size:140%;
 	box-sizing:border-box;
-	text-align:left;
+	text-align:center;
 	padding:33px 2.5% 33px 2.5%;
 }#thirdPageContent p.text{
 	font-size:1vmax;
