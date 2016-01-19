@@ -29,10 +29,17 @@
 				height:100%;
 				width:100%
 				background-color:white !important;
-			}.free-wall {
+			}#content {
 				width:calc(100% - 66px);
 				position:relative !imoprtant;
 				margin-top:66px;
+				color:black;
+			}h1{
+				color:rgb(101,171,245);
+			}h3{
+				font-size:70%;
+			}h4{
+				font-size:60%;
 			}.cover{
 					height:50%;
 		}.Blog-image{
@@ -49,7 +56,8 @@ font-size:75%;
 }.Logo{
 	
 	height:12.5%;
-}
+}xmp{
+display:inline;}
 
 		</style>
 	</head>
@@ -64,53 +72,49 @@ font-size:75%;
 					<a id="aboutButton" href="../../index.html#second">
 						ABOUT US
 					</a>
-					<a id="blogButton" href="">
+					<a id="blogButton" href="index.html">
 						BLOG
 					</a>
 					<a id="serviceButton" href="../../index.html#third">
 						SERVICES FOR YOU
 					</a>
+					
 				<div id="openButton"> </div>
-			</div>
-	<div id="freewall" class="free-wall">
+				</div>
 			
+	<div id="content">
+<h1>Finding the IP address of an Apple Mac</h1>
+			<h3>Author: Kit Walker | Date: 19 January 2016</h3>
+			<div id="page-content">
+			<h4>The IP address for a computer is an address that identifies any LAN enabled device on a network. 
+			You may want to find your IP for a number of reasons: 
+			<ul>
+				<li>Setting up a static IP.</li>
+				<li>File sharing, via samba.</li>
+				<li>Port forwarding for remote access.</li>
+			</ul>
+			Here listed below are a few ways to identify your IP address:
+			<ol>
+			<li>System Preferences.<br>
+				<ul>
+					<li>Open the network tab of system preferences by opening Spotlight (<xmp>CMD + Space</xmp>)</li>
+					<li>Search Network and open: <img src="01 Resources/network-in-spotlight.png" style="width:40%;"></li>
+					<li>In this tab, you will find a sentence saying your IP in both the Ethernet and Wi-Fi tab: <img src="01 Resources/network-tab.png" style="width:40%;"></li>
+				</ul>
+			</li>
+			<li>Fing.<br>
+				Fing is an app that can be found on both IOS and Android, it helps you search your network for all of the devices. Then look on the app for your device name.
+				<ul>
+					<li>Search in the AppStore for "Fing" and download this app: <img src="01 Resources/fing.png" style="width:20%;"> </li>
+					<li>Open the app and search, then locate your PC and find it's Ip.</li>
+				</ul>
+			</li>
 			
-			<div id="02" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/02.html'"> 
-				<img src="http://flaticons.net/icons/Network%20and%20Security/CPU-01.png" class="Blog-image">
-				<div class='cover'>
-					<h2>Overclocking</h2>
-					<p>
-						The pros and cons of turning lousy processors into gleaming new ones.
-					</p>
-				</div>
-			</div>
-			<div id="03" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/03.html'"> 
-				<img src="http://www.iconsdb.com/icons/download/white/rocket-512.png" class="Blog-image">
-				<div class='cover'>
-					<h2>An astronauts method</h2>
-					<p>
-						A discussion about a discussion by Chris Hadfield.
-					</p>
-				</div>
-			</div>
-			<div id="04" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/04.html'"> 
-				<img src="http://www.iconsdb.com/icons/preview/white/us-dollar-xxl.png" class="Blog-image">
-				<div class='cover'>
-					<h2>How to black Friday by storm.</h2>
-					<p>
-						A guide to dummies and veterans regarding how to black Friday by storm.
-					</p>
-				</div>
-			</div>
-			<div id="01" class="brick size22" data-fixSize=1 onclick="window.location = 'Posts/04.html'"> 
-				<img src="http://media2.bazaarvoice.com/designimages/globe.png" class="Blog-image">
-				<div class='cover'>
-					<h2>How to find your IP on Mac.</h2>
-					<p>
-						A guide on how to find your IP, here are two methods for you.
-					</p>
-				</div>
-			</div>
+				
+			</ol>
+			</h4>
+			
+
 	</div>
 	</div>
 		<div id="menu-popup">
@@ -127,20 +131,21 @@ font-size:75%;
 		</div>
 	</body>
 	<script>
+	
 	$("#01").click(function(){
-		var url = "01.html"
+		var url = "Posts/01.html"
 		window.location = url;
 	});
 	$("#02").click(function(){
-		var url = "02.html"
+		var url = "Posts/02.html"
 		window.location = url;
 	});
 	$("#03").click(function(){
-		var url = "03.html"
+		var url = "Posts/03.html"
 		window.location = url;
 	});
 	$("#04").click(function(){
-		var url = "04.html"
+		var url = "Posts/04.html"
 		window.location = url;
 	});
 	</script>
