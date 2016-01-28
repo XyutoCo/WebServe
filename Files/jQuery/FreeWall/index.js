@@ -6,8 +6,10 @@
 	var setting = {}, wall;
 	
 	var colour = [
-		"#8FCFFB",
-		"#8F99FB" ,
+		"#65ABF5",
+		"#D7E7F5",
+		"#0464E0",
+		"#C4685A",
 		
 	];
 
